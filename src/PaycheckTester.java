@@ -68,36 +68,6 @@ public class PaycheckTester {
 			double overtimePay = overtimePay1 + overtimePay2;
 			double expectedAmount = normalPay + overtimePay;
 			
-			
-			/*
-			// Expected Calculations
-			double overtimeRate = hrlyRate + hrlyRate / 2;
-			double breakTime1 = week1Breaks * 30 / 60;
-			double breakTime2 = week2Breaks * 30 / 60;
-			double totalBreakTime = breakTime1 + breakTime2;
-			//Overtime Check
-			if(week1Hrs - breakTime1 > 40) {
-				double overtimeWeek1 = (week1Hrs - breakTime1) - 40;
-				double overtimePay1 = overtimeWeek1 * overtimeRate;
-				
-			}
-			else {
-				break;
-			}
-			if(week2Hrs - breakTime2 > 40) {
-				double overtimeWeek2 = (week1Hrs - breakTime2) - 40;
-				double overtimePay2 = overtimeWeek2 * overtimeRate;
-				
-			}
-			else {
-				break;
-			}
-			double totalOvertime = overtimeWeek1 + overtimeWeek2;
-			double normalHrs = (((week1Hrs + week2Hrs) - totalOvertime) - totalBreakTime) ;
-			double normalPay = normalHrs * hrlyRate;
-			double overtimePay = totalOvertime * overtimeRate;
-			double expectedAmount = normalPay + overtimePay;
-			*/
 		
 			System.out.println("--------------------------------");
 			System.out.println("You should expect a gross amount of $" + expectedAmount + " in your paycheck");
